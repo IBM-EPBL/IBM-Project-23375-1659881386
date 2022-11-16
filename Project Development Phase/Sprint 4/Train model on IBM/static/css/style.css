@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('water_drop.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+/* styling the header */
+
+.row1 img {
+    height: 70px;
+    position: relative;
+    left: 54vw;
+}
+
+.row2 h1 {
+    position: absolute;
+    left: 60vw;
+    color: #ffff;
+    top: 30px;
+}
+
+main div.column input {
+    display: block;
+    position: relative;
+    margin: 24px 26px;
+    left: 60vw;
+    border-radius: 35px;
+    width: 250px;
+    height: 30px;
+}
+
+input[type="text"] {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main div.last input {
+    width: 256px;;
+    background: rgb(5, 3, 68);
+    background: linear-gradient(90deg, rgba(5, 3, 68, 1) 0%, rgba(0, 12, 36, 1) 0%, rgba(39, 9, 121, 1) 0%, rgba(38, 8, 114, 1) 0%, rgba(94, 0, 255, 1) 45%, rgba(188, 0, 255, 1) 84%);
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main div.last input:hover {
+    background: rgb(188, 0, 255);
+    background: linear-gradient(90deg, rgba(188, 0, 255, 1) 23%, rgba(94, 0, 255, 1) 63%, rgba(22, 9, 121, 1) 100%, rgba(5, 3, 68, 1) 100%, rgba(0, 12, 36, 1) 100%, rgba(38, 8, 114, 1) 100%);
+}
+
+.bor {
+    text-align: center;
+    margin-left: 60vw;
+    color: white;
+    font-size: 21px;
+    border: 2px solid rgb(251, 253, 255);
+    width: 358px;
+    padding-left: 4px;
+}
