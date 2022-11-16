@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Water Quality Analysis and Prediction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Navigation Bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="https://used-car-price-prediction-k.herokuapp.com">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+  </ul>
+</nav>
+<br>
+
+
+
+<div class="container">
+  <!--<img align="middle" src="https://image.freepik.com/free-vector/by-my-car-illustration-concept_114360-870.jpg"> -->
+  <h1>Water Quality Prediction</h1>
+  <p style="font-style: italic;">Fill the Details to predict the quality of water</p>
+
+    <!-- User Input Form-->
+    <form action="/login" method="POST">
+        <div class="form-group">
+            <label for="do">Dissolved Oxygen:</label>
+            <input type="text" step="0.01" class="form-control" placeholder="Dissolved Oxygen" id="Dissolved Oxygen" name="do" required><br>
+
+            <label for="ph">PH:</label>
+            <input type="text" step="0.01" class="form-control" placeholder="PH" id="PH" name="ph" required><br>
+
+            <label for="co">Carbon Monoxide:</label>
+            <input type="text" step="0.01" class="form-control" placeholder="Carbon Monoxide" id="Carbon Monoxide" name="co" required><br>
+
+            <label for="bo">Biochemical Oxygen Demand:</label>
+            <input type="text" step="0.01" class="form-control" placeholder="Biochemical Oxygen Demand" id="Biochemical Oxygen Demand" name="bod" required><br>
+
+            <label for="na">Sodium:</label>
+            <input type="text" step="0.01" class="form-control" placeholder="Sodium" id="Sodium" name="na" required><br>
+
+            <label for="tc">Technetium:</label>
+            <input type="text" step="0.01" class="form-control" placeholder="Technetium" id="Technetium" name="tc" required><br>
+            
+
+            <div class="button-group" style="margin-top:15px;"><br>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- After Prediction -->
+
+<div class="container">
+  <h2></h2>
+  <div class="alert alert-info" role="alert">
+    <strong></strong> {{output}}
+  </div>
+</div>
+
+
+  
+</body>
+</html>
+
+        
+
+
+
+
+
+
+
+
